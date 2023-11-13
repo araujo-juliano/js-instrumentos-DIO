@@ -1,4 +1,4 @@
-<h1 align="center">Projeto Instrumentos Musicais</h1>
+<h1 align="center">Projeto Instrumentos Musicais 🎶</h1>
 
 <h2 align="center">
     <p align="center">🔗 JAVASCRIPT</p>
