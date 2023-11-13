@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+}
+
+@font-face {
+  font-family: 'Prinp';
+  src: url(../fonts/PRINP___.ttf);
+}
+
+@font-face {
+  font-family: 'Super';
+  src: url(../fonts/SuperMario256.ttf);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(../images/fundo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #000000;
+  font-family: 'Prinp';
+}
+
+.botoes {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.botoes h5 {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  padding: 5px;
+  color: #b2b2b2;
+}

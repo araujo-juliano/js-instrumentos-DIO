@@ -1,0 +1,113 @@
+.container {
+  width: 780px;
+  height: 500px;
+  border-radius: 20px;
+  background-image: url(../images/violao.png);
+}
+
+.container header {
+  color: #b2b2b2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background-color: #000000;
+  border-radius: 20px;
+}
+
+header h2 {
+  font-size: 1.6rem;
+}
+
+header .column {
+  display: flex;
+  align-items: center;
+}
+
+header .column span {
+  font-weight: 500;
+  margin-right: 15px;
+  font-size: 1.19rem;
+}
+
+.volume-slider input {
+  accent-color: #ffffff;
+}
+
+.keys-check input {
+  width: 60px;
+  height: 30px;
+  appearance: none;
+  border-radius: 30px;
+  background-color: #4b4b4b;
+  cursor: pointer;
+  position: relative;
+}
+
+.keys-check input::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #8c8c8c;
+  top: 50%;
+  left: 0.3rem;
+  border-radius: inherit;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+.keys-check input:checked::before {
+  left: 2.1rem;
+  background-color: #ffffff;
+}
+
+.violao-keys {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Super';
+  margin-top: 150px;
+}
+
+.violao-keys.left {
+  margin-top: -98px;
+}
+
+.violao-keys .key {
+  cursor: pointer;
+  user-select: none;
+  color: #444444;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.violao-keys .left {
+  left: 28%;
+}
+
+.violao-keys .left.l {
+  left: 31%;
+}
+
+.violao-keys .left.active,
+.violao-keys .right.active {
+  box-shadow: inset -5px 5px 20px rgba(255, 254, 254, 0.5);
+  width: 15px;
+  border-radius: 50%;
+}
+
+.violao-keys .right {
+  color: #c7c7c7;
+}
+
+.violao-keys .right.r {
+  left: 3%;
+}
+
+.violao-keys .key.hide span {
+  color: transparent;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
